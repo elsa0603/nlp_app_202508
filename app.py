@@ -119,7 +119,7 @@ def is_url(s: str) -> bool:
 
 
 def fetch_url_to_text(url: str, timeout: int = 15) -> Tuple[str, str]:
-    \"\"\"Fetch a URL and return (title, text). Requires requests, BeautifulSoup, readability-lxml.\"\"\"
+    "\"\"\"Fetch a URL and return (title, text). Requires requests, BeautifulSoup, readability-lxml.\"\"\""
     if requests is None or BeautifulSoup is None or Document is None:
         raise RuntimeError("缺少 requests/bs4/readability-lxml，請在 requirements.txt 安裝。")
 
